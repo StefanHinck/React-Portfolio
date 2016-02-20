@@ -22,3 +22,7 @@ Icon
 .AppleDesktop
 Network Trash Folder
 Temporary Items
+
+# Node Modules and log
+node_modules
+npm-debug.log

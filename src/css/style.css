@@ -1,13 +1,30 @@
-html {
+* {
+    -webkit-font-smoothing: antialiased;
+    -webkit-backface-visibility: hidden;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-user-drag: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-overflow-scrolling: touch;
+    -webkit-touch-callout: none;
+}
+
+html, body, #app {
   width: 100%;
-  min-width: 100%;
   height: 100%;
-  min-height: 100%;
+  overflow: hidden !important;
+  padding: 0;
+  margin: 0;
 }
 body {
   font-family: "Helvetica-Neue", Helvetica, sans-serif;
 }
-
+#app {
+  position: relative;
+}
 
 #bootstrap-elements-wrapper {
   position: relative;
@@ -22,7 +39,72 @@ body {
   padding: 0 5%;
 }
 
-footer {
-  padding: 3% 0;
+.btn {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.5);
+  border: solid 1px rgba(255,255,255,0.2);
+  transition: all 300ms ease;
+}
+.btn:hover {
+  background: rgba(255,255,255,0.8);
+  border: solid 1px rgba(255,255,255,0);
+}
+
+#layer-all {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+    overflow-y: visible;
+}
+
+#mid-layer {
+  position: relative;
+  z-index: 10;
+}
+
+#layer-top {
+
+}
+#layer-top .wxh {
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  height: 50px;
+  font-size: 12px;
   text-align: center;
+  color: rgba(255,255,255,0.2);
+  z-index: 10000;
+}
+#layer-top .wxh em {
+  font-style: normal;
+  font-weight: normal;
+  color: rgba(255,255,255,0.4);
+}
+
+#layer-top .btn {
+  position: absolute;
+  z-index: 10000;
+}
+#layer-top #hamburger {
+  top: 4%;
+  right: 20px;
+}
+#layer-top #scroll {
+  bottom: 4%;
+  right: 20px;
+}
+
+
+#layer-mid {
+
+}
+
+.alert.mock {
+  margin-bottom: 0;
+  height: 210px;
+  border: none;
+  border-radius: 0;
 }

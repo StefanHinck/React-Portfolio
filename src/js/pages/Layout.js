@@ -2,8 +2,7 @@ import React from "react";
 import { Link } from "react-router";
 
 
-import Nav from "../components/layout/Header";
-import Footer from "../components/layout/Footer";
+import LayerTop from "../components/layout/LayerTop";
 
 export default class Layout extends React.Component {
 
@@ -31,26 +30,17 @@ export default class Layout extends React.Component {
   render() {
     const { location } = this.props;
     const containerStyle = {
-      marginTop: "52px"
+      marginTop: "0px"
     };
 
     return (
-      <div>
+      <div id="layer-all">
 
-        <Nav location={location} width={this.state.windowWidth} height={this.state.windowHeight} />
+        <LayerTop location={location} width={this.state.windowWidth} height={this.state.windowHeight} />
 
-        <div  style={containerStyle}>
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                {this.props.children}
-                <div>Current window dimensions are: {this.state.windowWidth} x {this.state.windowHeight} </div>
-              </div>
-            </div>
-          </div>
+        <div id="layer-mid">
+          {this.props.children}
         </div>
-
-        <Footer width={this.state.windowWidth} height={this.state.windowHeight} />
 
       </div>
     );

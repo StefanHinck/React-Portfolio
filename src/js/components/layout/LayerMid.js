@@ -6,7 +6,7 @@ export default class LayerMid extends React.Component {
     super()
   }
 
-  
+
 
 
   render() {
@@ -22,8 +22,8 @@ export default class LayerMid extends React.Component {
         </div>
 
         <div id="main" style={{height: windowHeight + 'px'}}>
-        {this.props.children}
-        Hello from inside LayerMid!!!
+          {this.props.children}
+          Hello from inside LayerMid!!!
         </div>
 
       </div>

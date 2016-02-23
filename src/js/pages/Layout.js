@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router";
+import classNames from "classnames";
 
 
 import LayerTop from "../components/layout/LayerTop";
@@ -15,7 +16,6 @@ export default class Layout extends React.Component {
       sidebarVisible: true
     };
   }
-
 
   componentWillMount() {
     window.addEventListener("resize", this.handleResize.bind(this));
@@ -44,13 +44,15 @@ export default class Layout extends React.Component {
   render() {
     const { location } = this.props;
     const { children } = this.props;
-    const containerStyle = {
-      marginTop: "0px"
-    };
 
+    var stateClasses = classNames({
+      'show-sidebar': this.state.sidebarVisible,
+      'show-class': true,
+      'no-class': false
+    });
 
     return (
-      <div id="layer-all" class={this.state.sidebarVisible ? "show-sidebar" : ""}>
+      <div id="layer-all" class={stateClasses}>
 
         <LayerTop location={location} sidebar={this.state.sidebarVisible} updateSidebar={this.updateSidebar.bind(this)} windowWidth={this.state.windowWidth} windowHeight={this.state.windowHeight} />
 

@@ -117,6 +117,16 @@ body {
   background: rgba(0,0,0,0.2);
   overflow: hidden;
 }
+#layer-all #sidebar a {
+  display: block;
+  padding: 15px 5px;
+  background: rgba(0,0,0,0);
+  transition: background 300ms ease;
+  -webkit-transition: background 300ms ease;
+}
+#layer-all #sidebar .active a {
+  background: rgba(0,0,0,0.3);
+}
 #layer-all #main {
   float: left;
   width: 100%;

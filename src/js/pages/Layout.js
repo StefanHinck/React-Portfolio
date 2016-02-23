@@ -54,9 +54,9 @@ export default class Layout extends React.Component {
     return (
       <div id="layer-all" class={stateClasses}>
 
-        <LayerTop location={location} sidebar={this.state.sidebarVisible} updateSidebar={this.updateSidebar.bind(this)} windowWidth={this.state.windowWidth} windowHeight={this.state.windowHeight} />
+        <LayerTop sidebar={this.state.sidebarVisible} updateSidebar={this.updateSidebar.bind(this)} windowWidth={this.state.windowWidth} windowHeight={this.state.windowHeight} />
 
-        <LayerMid children={children} windowWidth={this.state.windowWidth} windowHeight={this.state.windowHeight} />
+        <LayerMid children={children} location={location} windowWidth={this.state.windowWidth} windowHeight={this.state.windowHeight} />
 
       </div>
     );

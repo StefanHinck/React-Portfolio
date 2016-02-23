@@ -14,7 +14,7 @@ export default class LayerTop extends React.Component {
 
 
   render() {
-    console.log(this.props);
+    
     return (
       <div id="layer-top">
         <a href="#" class="btn" id="hamburger" onClick={this.toggleSidebar.bind(this)}></a>

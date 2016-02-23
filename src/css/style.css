@@ -18,6 +18,7 @@ html, body, #app {
   overflow: hidden !important;
   padding: 0;
   margin: 0;
+
 }
 body {
   font-family: "Helvetica-Neue", Helvetica, sans-serif;
@@ -101,6 +102,33 @@ body {
 #layer-mid {
 
 }
+
+#main, #sidebar {
+  padding: 0;
+  margin: 0;
+  display: inline-block; /* Attempt at fixing margins bleeding out of wrapper */
+  transition: all 300ms ease;
+  -webkit-transition: all 300ms ease;
+}
+
+#layer-all #sidebar{
+  float: left;
+  width: 0%;
+  background: rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+#layer-all #main {
+  float: left;
+  width: 100%;
+}
+
+#layer-all.show-sidebar #sidebar{
+  width: 30%;
+}
+#layer-all.show-sidebar #main {
+  width: 70%;
+}
+
 
 .alert.mock {
   margin-bottom: 0;

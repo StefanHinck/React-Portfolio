@@ -6,6 +6,10 @@ export default class LayerMid extends React.Component {
     super()
   }
 
+  toggleSidebar() {
+    var state = !this.props.sidebar;
+    this.props.updateSidebar(state);
+  }
 
   render() {
     var windowWidth = this.props.windowWidth;
@@ -16,8 +20,6 @@ export default class LayerMid extends React.Component {
     const archivesClass = location.pathname.match(/^\/archives/) ? "active" : "";
     const settingsClass = location.pathname.match(/^\/settings/) ? "active" : "";
 
-    console.log(location);
-
     return (
 
       <div id="layer-mid" style={{width: windowWidth + 'px', height: windowHeight + 'px'}}>
@@ -25,13 +27,13 @@ export default class LayerMid extends React.Component {
         <div id="sidebar" style={{height: windowHeight + 'px'}}>
           <ul>
             <li class={featuredClass}>
-              <IndexLink to="/">Featured</IndexLink>
+              <IndexLink to="/" onClick={this.toggleSidebar.bind(this)}>Featured</IndexLink>
             </li>
             <li class={archivesClass}>
-              <Link to="archives">Archives</Link>
+              <Link to="archives" onClick={this.toggleSidebar.bind(this)}>Archives</Link>
             </li>
             <li class={settingsClass}>
-              <Link to="settings">Settings</Link>
+              <Link to="settings" onClick={this.toggleSidebar.bind(this)}>Settings</Link>
             </li>
           </ul>
         </div>

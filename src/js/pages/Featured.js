@@ -1,4 +1,6 @@
 import React from "react";
+import ReactCSSTransitionGroup from "react-addons-css-transition-group";
+
 
 
 
@@ -17,9 +19,9 @@ export default class Featured extends React.Component {
   render() {
 
     return (
-      <div class="">
+      <ReactCSSTransitionGroup transitionName="fade" transitionAppear={true} transitionAppearTimeout={500}>
         <h1>Featured</h1>
-      </div>
+      </ReactCSSTransitionGroup>
     );
   }
 }

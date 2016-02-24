@@ -14,10 +14,10 @@ export default class LayerTop extends React.Component {
 
 
   render() {
-    
+
     return (
       <div id="layer-top">
-        <a href="#" class="btn" id="hamburger" onClick={this.toggleSidebar.bind(this)}></a>
+        <a class="btn" id="hamburger" onClick={this.toggleSidebar.bind(this)}></a>
         <a href="#" class="btn" id="scroll"></a>
         <div class="wxh">Current window dimensions are: <em>{this.props.windowWidth}</em> x <em>{this.props.windowHeight}</em></div>
       </div>

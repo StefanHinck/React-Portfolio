@@ -56,7 +56,7 @@ export default class Layout extends React.Component {
 
         <LayerTop sidebar={this.state.sidebarVisible} updateSidebar={this.updateSidebar.bind(this)} windowWidth={this.state.windowWidth} windowHeight={this.state.windowHeight} />
 
-        <LayerMid children={children} location={location} windowWidth={this.state.windowWidth} windowHeight={this.state.windowHeight} />
+        <LayerMid children={children} location={location} sidebar={this.state.sidebarVisible} updateSidebar={this.updateSidebar.bind(this)} windowWidth={this.state.windowWidth} windowHeight={this.state.windowHeight} />
 
       </div>
     );

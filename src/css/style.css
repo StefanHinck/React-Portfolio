@@ -151,7 +151,7 @@ a:hover, a:active { text-decoration: none; }
   background-color: #f0184e;
 }
 #layer-top #hamburger:active span:nth-child(2) {
-  
+
 }
 
 
@@ -320,3 +320,10 @@ a:hover, a:active { text-decoration: none; }
   -moz-transition: opacity 300ms ease-in;
   -o-transition: opacity 300ms ease-in;
 }
+
+
+
+
+.slick-prev { left: 0; }
+.slick-next { right: 0; }
+.slick-slide { text-align: center; }

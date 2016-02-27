@@ -5,6 +5,7 @@ import { Router, Route, IndexRoute, hashHistory } from "react-router";
 import Bootstrap from "./vendor/bootstrap-without-jquery";
 
 import BootstrapElements from "./pages/BootstrapElements";
+import SliderExample from "./pages/SliderExample";
 import Archives from "./pages/Archives";
 import Featured from "./pages/Featured";
 import Layout from "./pages/Layout";
@@ -17,6 +18,7 @@ ReactDOM.render(
     <Route path="/" component={Layout}>
       <IndexRoute component={Featured}></IndexRoute>
       <Route path="bootstrap-elements" component={BootstrapElements}></Route>
+      <Route path="slider-example" component={SliderExample}></Route>
       <Route path="archives" component={Archives}></Route>
       <Route path="settings" component={Settings}></Route>
     </Route>

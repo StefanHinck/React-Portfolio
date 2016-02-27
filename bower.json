@@ -1,0 +1,21 @@
+{
+  "name": "react-portfolio",
+  "description": "",
+  "main": "webpack.config.js",
+  "license": "ISC",
+  "homepage": "https://github.com/StefanHinck/React-Portfolio",
+  "moduleType": [
+    "es6",
+    "node"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "slick-carousel": "^1.5.9"
+  }
+}

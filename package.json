@@ -1,5 +1,5 @@
 {
-  "name": "react-tutorials",
+  "name": "react-portfolio",
   "version": "0.0.0",
   "description": "",
   "main": "webpack.config.js",
@@ -18,6 +18,7 @@
     "react-addons-css-transition-group": "^0.14.7",
     "react-dom": "^0.14.6",
     "react-router": "^1.0.3",
+    "react-slick": "^0.11.0",
     "webpack": "^1.12.13",
     "webpack-dev-server": "^1.14.1"
   },

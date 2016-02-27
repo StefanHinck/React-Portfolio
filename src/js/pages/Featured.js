@@ -1,9 +1,6 @@
 import React from "react";
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 
-
-
-
 export default class Featured extends React.Component {
 
   componentWillMount() {

@@ -25,12 +25,13 @@ export default class LayerMid extends React.Component {
     const archivesClass = location.pathname.match(/^\/archives/) ? "active" : "";
     const settingsClass = location.pathname.match(/^\/settings/) ? "active" : "";
     const bootstrapClass = location.pathname.match(/^\/bootstrap-elements/) ? "active" : "";
+    const sliderClass = location.pathname.match(/^\/slider-example/) ? "active" : "";
 
     return (
 
       <div id="layer-mid" style={{width: windowWidth + 'px', height: windowHeight + 'px'}}>
 
-        <div id="sidebar" style={{height: windowHeight + 'px'}}>
+        <div id="sidebar" style={{width: windowWidth + 'px', height: windowHeight + 'px'}}>
           <ul>
             <li class={featuredClass}>
               <IndexLink to="/" onClick={this.toggleSidebar.bind(this)}>Featured</IndexLink>
@@ -44,11 +45,14 @@ export default class LayerMid extends React.Component {
             <li class={bootstrapClass}>
               <Link to="bootstrap-elements" onClick={this.toggleSidebar.bind(this)}>Bootstrap Elements</Link>
             </li>
+            <li class={sliderClass}>
+              <Link to="slider-example" onClick={this.toggleSidebar.bind(this)}>Slider Example</Link>
+            </li>
           </ul>
           <div id="sidebar-logo">ReBuild</div>
         </div>
 
-        <div id="main" style={{height: windowHeight + 'px'}}>
+        <div id="main" style={{width: windowWidth + 'px', height: windowHeight + 'px'}}>
           {this.props.children}
         </div>
 

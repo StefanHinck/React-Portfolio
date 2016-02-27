@@ -34,14 +34,11 @@ export default class Bootstrap extends React.Component {
 
       <div class="page-header" id="banner">
         <div class="row">
-          <div class="col-md-8 col-md-7 col-sm-6">
+          <div class="col-md-8 col-md-7 col-sm-12">
             <h1>Slate</h1>
             <p class="lead">Shades of gunmetal gray</p>
-          </div>
-          <div class="col-md-4 col-md-5 col-sm-6">
-            <div class="sponsor">
-              <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=bootswatchcom" id="_carbonads_js"></script>
-            </div>
+            <p>Below are all (or most) of the bootstrap elements styled taking into account both the bootstrap skin (Slate) as well as any overrides. Use this as a reference for both styling as well as quick copy/pasting of elements into the current project.</p>
+            <br />
           </div>
         </div>
         <div class="row">

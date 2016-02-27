@@ -24,6 +24,7 @@ export default class LayerMid extends React.Component {
     const featuredClass = location.pathname === "/" ? "active" : "";
     const archivesClass = location.pathname.match(/^\/archives/) ? "active" : "";
     const settingsClass = location.pathname.match(/^\/settings/) ? "active" : "";
+    const bootstrapClass = location.pathname.match(/^\/bootstrap-elements/) ? "active" : "";
 
     return (
 
@@ -39,6 +40,9 @@ export default class LayerMid extends React.Component {
             </li>
             <li class={settingsClass}>
               <Link to="settings" onClick={this.toggleSidebar.bind(this)}>Settings</Link>
+            </li>
+            <li class={bootstrapClass}>
+              <Link to="bootstrap-elements" onClick={this.toggleSidebar.bind(this)}>Bootstrap Elements</Link>
             </li>
           </ul>
           <div id="sidebar-logo">ReBuild</div>

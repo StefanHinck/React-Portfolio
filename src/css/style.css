@@ -151,7 +151,7 @@ a:hover, a:active { text-decoration: none; }
   background-color: #f0184e;
 }
 #layer-top #hamburger:active span:nth-child(2) {
-  
+
 }
 
 
@@ -320,3 +320,45 @@ a:hover, a:active { text-decoration: none; }
   -moz-transition: opacity 300ms ease-in;
   -o-transition: opacity 300ms ease-in;
 }
+
+
+
+
+
+/* SCROLL JACKING STYLES */
+
+#projects {
+	height:100%;
+}
+
+.slide {
+	position: absolute;
+	top:0;
+	left:0;
+	height: 0;
+	width: 100%;
+  overflow: hidden;
+  text-align: center;
+
+	-webkit-transition: height 800ms cubic-bezier(0.23, 1, 0.32, 1);
+  -moz-transition: height 800ms cubic-bezier(0.23, 1, 0.32, 1);
+  -o-transition: height 800ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: height 800ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+// so that slides can transition from bottom-up
+.slide:nth-child(0) { z-index:10; background: red; }
+.slide:nth-child(1) { z-index:9; background: blue; }
+.slide:nth-child(2) { z-index:8; background: purple; }
+
+.active.slide {
+	height: 100%;
+}
+.slide.no-animation {
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  -webkit-transition: none !important;
+  transition: none !important;
+}
+
+/* END SCROLL JACKING */

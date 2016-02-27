@@ -33,6 +33,12 @@ export default class Layout extends React.Component {
     });
   }
 
+  closeSidebar() {
+    this.setState ({
+      sidebarVisible: false
+    });
+  }
+
   updateSidebar(state){
     this.setState ({
       sidebarVisible: state
@@ -56,7 +62,7 @@ export default class Layout extends React.Component {
 
         <LayerTop sidebar={this.state.sidebarVisible} updateSidebar={this.updateSidebar.bind(this)} windowWidth={this.state.windowWidth} windowHeight={this.state.windowHeight} />
 
-        <LayerMid children={children} location={location} sidebar={this.state.sidebarVisible} updateSidebar={this.updateSidebar.bind(this)} windowWidth={this.state.windowWidth} windowHeight={this.state.windowHeight} />
+        <LayerMid children={children} location={location} sidebar={this.state.sidebarVisible} closeSidebar={this.closeSidebar.bind(this)} updateSidebar={this.updateSidebar.bind(this)} windowWidth={this.state.windowWidth} windowHeight={this.state.windowHeight} />
 
       </div>
     );

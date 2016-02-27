@@ -11,6 +11,11 @@ export default class LayerMid extends React.Component {
     this.props.updateSidebar(state);
   }
 
+  componentDidMount() {
+    this.props.closeSidebar();
+  }
+
+
   render() {
     var windowWidth = this.props.windowWidth;
     var windowHeight = this.props.windowHeight;
@@ -36,6 +41,7 @@ export default class LayerMid extends React.Component {
               <Link to="settings" onClick={this.toggleSidebar.bind(this)}>Settings</Link>
             </li>
           </ul>
+          <div id="sidebar-logo">ReBuild</div>
         </div>
 
         <div id="main" style={{height: windowHeight + 'px'}}>

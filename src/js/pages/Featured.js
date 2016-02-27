@@ -20,7 +20,13 @@ export default class Featured extends React.Component {
 
     return (
       <ReactCSSTransitionGroup transitionName="fade" transitionAppear={true} transitionAppearTimeout={500}>
-        <h1>Featured</h1>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <h1>Featured</h1>
+            </div>
+          </div>
+        </div>
       </ReactCSSTransitionGroup>
     );
   }

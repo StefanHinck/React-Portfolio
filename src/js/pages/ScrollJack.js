@@ -1,9 +1,10 @@
 import React from "react";
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 
-import SlickSlider from "../components/Slider";
 
-export default class SliderExample extends React.Component {
+
+
+export default class Featured extends React.Component {
 
   componentWillMount() {
     console.log('Component is about to mount')
@@ -19,8 +20,13 @@ export default class SliderExample extends React.Component {
 
     return (
       <ReactCSSTransitionGroup transitionName="fade" transitionAppear={true} transitionAppearTimeout={500}>
-        <h1>Slider Example</h1>
-        <SlickSlider />
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <h1>Featured</h1>
+            </div>
+          </div>
+        </div>
       </ReactCSSTransitionGroup>
     );
   }

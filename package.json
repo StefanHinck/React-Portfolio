@@ -15,6 +15,7 @@
     "classnames": "^2.2.3",
     "css-loader": "^0.12.0",
     "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.5",
     "history": "^1.17.0",
     "node-sass": "^2.1.1",
     "react": "^0.14.6",
@@ -23,6 +24,7 @@
     "react-router": "^1.0.3",
     "sass-loader": "^0.5.0",
     "style-loader": "^0.12.2",
+    "url-loader": "^0.5.7",
     "webpack": "^1.12.13",
     "webpack-dev-server": "^1.14.1"
   },

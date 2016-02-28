@@ -20,19 +20,19 @@ html, body, #app {
   margin: 0;
 }
 body {
-  font-family: "neue-reg", "Helvetica-Neue", Helvetica, sans-serif;
+  font-family: "text-reg", "Helvetica-Neue", Helvetica, sans-serif;
   font-size: 16px;
   background-color: #282c34;
 }
 #app {
   position: relative;
 }
-h1, h2, h3, h4, h5, h6 { font-family: "neue-med", "Helvetica-Neue", Helvetica, sans-serif; font-weight: 500; font-style: normal; }
-.xlt { font-family: "neue-xlt", "Helvetica-Neue", Helvetica, sans-serif; font-weight: 300; font-style: normal; }
-.reg { font-family: "neue-reg", "Helvetica-Neue", Helvetica, sans-serif; font-weight: normal; font-style: normal; }
-.med, em { font-family: "neue-med", "Helvetica-Neue", Helvetica, sans-serif; font-weight: 500; font-style: normal; }
-.bld, strong, b { font-family: "neue-bld", "Helvetica-Neue", Helvetica, sans-serif; font-weight: bold; font-style: normal; }
-.blk { font-family: "neue-blk", "Helvetica-Neue", Helvetica, sans-serif; font-weight: 900; font-style: normal; }
+h1, h2, h3, h4, h5, h6 { font-family: "title-bld", "Helvetica-Neue", Helvetica, sans-serif; font-weight: 500; font-style: normal; text-transform: uppercase; }
+.lt { font-family: "text-lt", "Helvetica-Neue", Helvetica, sans-serif; font-weight: 300; font-style: normal; }
+.reg { font-family: "text-reg", "Helvetica-Neue", Helvetica, sans-serif; font-weight: normal; font-style: normal; }
+.med, em { font-family: "text-med", "Helvetica-Neue", Helvetica, sans-serif; font-weight: 500; font-style: normal; }
+.bld, strong, b { font-family: "text-bld", "Helvetica-Neue", Helvetica, sans-serif; font-weight: bold; font-style: normal; }
+.blk { font-family: "text-blk", "Helvetica-Neue", Helvetica, sans-serif; font-weight: 900; font-style: normal; }
 
 a:hover, a:active { text-decoration: none; }
 
@@ -189,7 +189,7 @@ a:hover, a:active { text-decoration: none; }
 #layer-all #sidebar a {
   display: block;
   padding: 15px;
-  font-family: "neue-med", "Helvetica-Neue", Helvetica, sans-serif; font-weight: 500; font-style: normal;
+  font-family: "title-bld", "Helvetica-Neue", Helvetica, sans-serif; font-weight: 500; font-style: normal; text-transform: uppercase; ;
   font-size: 1.75em;
   color: rgba(255,255,255,0.5);
   transition: color 200ms ease-in;
@@ -205,13 +205,13 @@ a:hover, a:active { text-decoration: none; }
   color: rgba(255,255,255,1);
 }
 #layer-all #sidebar #sidebar-logo {
-  font-family: "neue-bld", "Helvetica-Neue", Helvetica, sans-serif; font-weight: bold; font-style: normal;
+  font-family: "title-bld", "Helvetica-Neue", Helvetica, sans-serif; font-weight: bold; font-style: normal;
   color: #fff;
   color: rgba(0,0,0,0.3);
   font-size: 6.875em;
   position: absolute;
-  bottom: 30%;
-  left: -190px;
+  bottom: 150px;
+  left: -150px;
   line-height: 1em;
   text-align: left;
   padding: 0;

@@ -19,7 +19,7 @@ export default class Featured extends React.Component {
   render() {
 
     return (
-      <ReactCSSTransitionGroup transitionName="fade" transitionAppear={true} transitionAppearTimeout={500} transitionLeaveTimeout={500}>
+      <ReactCSSTransitionGroup transitionName="fade" transitionAppear={true} transitionAppearTimeout={500} transitionEnterTimeout={500} transitionLeaveTimeout={500}>
         <div class="container">
           <div class="row">
             <div class="col-xs-12">

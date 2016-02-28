@@ -1,6 +1,4 @@
-$hdr-lt:    normal 300 1em "title-lt", "Helvetica-Neue", Helvetica, sans-serif;
-$hdr-med:   normal normal 1em "title-med", "Helvetica-Neue", Helvetica, sans-serif;
-$hdr-bld:   normal bold 1em "title-bld", "Helvetica-Neue", Helvetica, sans-serif;
+$hdr-bld:   normal bold 1em "hdr-bld", "Helvetica-Neue", Helvetica, sans-serif;
 
 $text-lt:    normal 300 1em "text-lt", "Helvetica-Neue", Helvetica, sans-serif;
 $text-reg:   normal normal 1em "text-reg", "Helvetica-Neue", Helvetica, sans-serif;
@@ -33,7 +31,7 @@ html, body, #app {
 }
 body {
   font: $text-lt;
-  font-size: 16px;
+  font-size: 15px;
   background-color: #282c34;
 }
 #app {
@@ -48,8 +46,6 @@ h4 { font-size: 2em; }
 h5 { font-size: 1.5em; }
 h6 { font-size: 1em; }
 
-.hdr-lt { font: $hdr-lt; }
-.hdr-med { font: $hdr-med; }
 .hdr-bld { font: $hdr-bld; }
 .text-lt { font: $text-lt; }
 .text-reg { font: $text-reg; }
@@ -232,8 +228,8 @@ a:hover, a:active { text-decoration: none; }
   color: rgba(0,0,0,0.3);
   font-size: 6.875em;
   position: absolute;
-  bottom: 150px;
-  left: -150px;
+  bottom: 195px;
+  left: -170px;
   line-height: 1em;
   text-align: left;
   padding: 0;

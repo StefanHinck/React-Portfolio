@@ -1,36 +1,13 @@
 @font-face {
-    font-family: 'title-bld';
-    src: url('agenda/agenda_bold-webfont.eot');
-    src: url('agenda/agenda_bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('agenda/agenda_bold-webfont.woff2') format('woff2'),
-         url('agenda/agenda_bold-webfont.woff') format('woff'),
-         url('agenda/agenda_bold-webfont.ttf') format('truetype'),
-         url('agenda/agenda_bold-webfont.svg#agenda-boldregular') format('svg');
-    font-weight: bold;
+    font-family: 'hdr-bld';
+    src: url('proxima/proximanova-extrabold-webfont.eot');
+    src: url('proxima/proximanova-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('proxima/proximanova-extrabold-webfont.woff2') format('woff2'),
+         url('proxima/proximanova-extrabold-webfont.woff') format('woff'),
+         url('proxima/proximanova-extrabold-webfont.ttf') format('truetype'),
+         url('proxima/proximanova-extrabold-webfont.svg#proxima_novaextrabold') format('svg');
+    font-weight: 900;
     font-style: normal;
-}
-@font-face {
-    font-family: 'title-med';
-    src: url('agenda/agenda_medium-webfont.eot');
-    src: url('agenda/agenda_medium-webfont.eot?#iefix') format('embedded-opentype'),
-         url('agenda/agenda_medium-webfont.woff2') format('woff2'),
-         url('agenda/agenda_medium-webfont.woff') format('woff'),
-         url('agenda/agenda_medium-webfont.ttf') format('truetype'),
-         url('agenda/agenda_medium-webfont.svg#agenda-mediumregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'title-lt';
-    src: url('agenda/agenda_light-webfont.eot');
-    src: url('agenda/agenda_light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('agenda/agenda_light-webfont.woff2') format('woff2'),
-         url('agenda/agenda_light-webfont.woff') format('woff'),
-         url('agenda/agenda_light-webfont.ttf') format('truetype'),
-         url('agenda/agenda_light-webfont.svg#agenda-lightregular') format('svg');
-    font-weight: 300;
-    font-style: normal;
-
 }
 
 @font-face {

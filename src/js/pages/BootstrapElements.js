@@ -33,7 +33,7 @@ export default class Bootstrap extends React.Component {
 
 
     return (
-      <ReactCSSTransitionGroup transitionName="fade" transitionAppear={true} transitionAppearTimeout={500} transitionLeaveTimeout={500}>
+      <ReactCSSTransitionGroup transitionName="fade" transitionAppear={true} transitionAppearTimeout={500} transitionEnterTimeout={500} transitionLeaveTimeout={500}>
         <div id="bootstrap-elements-wrapper">
 
           <div class="page-header" id="banner">

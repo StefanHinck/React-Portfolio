@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./bootstrap-elements.scss";
+
 export default class Bootstrap extends React.Component {
   render() {
 

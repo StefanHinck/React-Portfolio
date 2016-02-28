@@ -1,5 +1,6 @@
 import React from "react";
 import { IndexLink, Link } from "react-router";
+import "./layer-top.scss";
 
 export default class LayerTop extends React.Component {
   constructor() {

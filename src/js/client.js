@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import { Router, Route, IndexRoute, hashHistory } from "react-router";
 
 import Bootstrap from "./vendor/bootstrap-without-jquery";
+import "./style.scss";
 
 import BootstrapElements from "./pages/BootstrapElements";
 import Archives from "./pages/Archives";

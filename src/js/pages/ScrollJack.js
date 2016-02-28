@@ -1,7 +1,6 @@
 import React from "react";
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 
-
 export default class ScrollJack extends React.Component {
 
   componentWillMount() {
@@ -17,7 +16,7 @@ export default class ScrollJack extends React.Component {
     var currentSlideIndex = 0;
     var scrollThreshold = 50;
     var slides = $(".slide");
-    var numSlides = slides.length;
+    var numSlides = slides.length - 1;
 
     var projects = $("#projects");
     var dragThreshold = 0.25;// "percentage" to drag before engaging
@@ -58,7 +57,7 @@ export default class ScrollJack extends React.Component {
     	delta = 0;
 
     	slides.each(function(i, slide) {
-    		$(slide).toggleClass('active', (i >= currentSlideIndex)).css("height","");;
+    		$(slide).toggleClass('active', (i >= currentSlideIndex)).css("height","");
     	});
 
     }
@@ -184,6 +183,7 @@ export default class ScrollJack extends React.Component {
           <section id="project-1" class="slide active">PROJECT 1</section>
           <section id="project-2" class="slide active">PROJECT 2</section>
         </div>
+
       </ReactCSSTransitionGroup>
     );
   }

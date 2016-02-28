@@ -1,3 +1,15 @@
+$hdr-lt:    normal 300 1em "title-lt", "Helvetica-Neue", Helvetica, sans-serif;
+$hdr-med:   normal normal 1em "title-med", "Helvetica-Neue", Helvetica, sans-serif;
+$hdr-bld:   normal bold 1em "title-bld", "Helvetica-Neue", Helvetica, sans-serif;
+
+$text-lt:    normal 300 1em "text-lt", "Helvetica-Neue", Helvetica, sans-serif;
+$text-reg:   normal normal 1em "text-reg", "Helvetica-Neue", Helvetica, sans-serif;
+$text-bld:   normal bold 1em "text-bld", "Helvetica-Neue", Helvetica, sans-serif;
+$text-blk:   normal 900 1em "text-blk", "Helvetica-Neue", Helvetica, sans-serif;
+
+
+
+
 * {
     -webkit-font-smoothing: antialiased;
     -webkit-backface-visibility: hidden;
@@ -20,19 +32,29 @@ html, body, #app {
   margin: 0;
 }
 body {
-  font-family: "text-reg", "Helvetica-Neue", Helvetica, sans-serif;
+  font: $text-lt;
   font-size: 16px;
   background-color: #282c34;
 }
 #app {
   position: relative;
 }
-h1, h2, h3, h4, h5, h6 { font-family: "title-bld", "Helvetica-Neue", Helvetica, sans-serif; font-weight: 500; font-style: normal; text-transform: uppercase; }
-.lt { font-family: "text-lt", "Helvetica-Neue", Helvetica, sans-serif; font-weight: 300; font-style: normal; }
-.reg { font-family: "text-reg", "Helvetica-Neue", Helvetica, sans-serif; font-weight: normal; font-style: normal; }
-.med, em { font-family: "text-med", "Helvetica-Neue", Helvetica, sans-serif; font-weight: 500; font-style: normal; }
-.bld, strong, b { font-family: "text-bld", "Helvetica-Neue", Helvetica, sans-serif; font-weight: bold; font-style: normal; }
-.blk { font-family: "text-blk", "Helvetica-Neue", Helvetica, sans-serif; font-weight: 900; font-style: normal; }
+
+h1, h2, h3, h4, h5, h6 { font: $hdr-bld; text-transform: uppercase; line-height: 1.2em;}
+h1 { font-size: 3.5em; }
+h2 { font-size: 3em; }
+h3 { font-size: 2.5em; }
+h4 { font-size: 2em; }
+h5 { font-size: 1.5em; }
+h6 { font-size: 1em; }
+
+.hdr-lt { font: $hdr-lt; }
+.hdr-med { font: $hdr-med; }
+.hdr-bld { font: $hdr-bld; }
+.text-lt { font: $text-lt; }
+.text-reg { font: $text-reg; }
+.text-bld, em, b { font: $text-bld; }
+.text-blk, strong { font: $text-blk; }
 
 a:hover, a:active { text-decoration: none; }
 
@@ -189,7 +211,7 @@ a:hover, a:active { text-decoration: none; }
 #layer-all #sidebar a {
   display: block;
   padding: 15px;
-  font-family: "title-bld", "Helvetica-Neue", Helvetica, sans-serif; font-weight: 500; font-style: normal; text-transform: uppercase; ;
+  font: $hdr-bld; text-transform: uppercase; ;
   font-size: 1.75em;
   color: rgba(255,255,255,0.5);
   transition: color 200ms ease-in;
@@ -205,7 +227,7 @@ a:hover, a:active { text-decoration: none; }
   color: rgba(255,255,255,1);
 }
 #layer-all #sidebar #sidebar-logo {
-  font-family: "title-bld", "Helvetica-Neue", Helvetica, sans-serif; font-weight: bold; font-style: normal;
+  font: $hdr-bld;
   color: #fff;
   color: rgba(0,0,0,0.3);
   font-size: 6.875em;

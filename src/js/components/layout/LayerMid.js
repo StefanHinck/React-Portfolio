@@ -25,7 +25,6 @@ export default class LayerMid extends React.Component {
     const archivesClass = location.pathname.match(/^\/archives/) ? "active" : "";
     const settingsClass = location.pathname.match(/^\/settings/) ? "active" : "";
     const bootstrapClass = location.pathname.match(/^\/bootstrap-elements/) ? "active" : "";
-    const scrollJackClass = location.pathname.match(/^\/scroll-jack-example/) ? "active" : "";
 
     return (
 
@@ -44,9 +43,6 @@ export default class LayerMid extends React.Component {
             </li>
             <li class={bootstrapClass}>
               <Link to="bootstrap-elements" onClick={this.toggleSidebar.bind(this)}>Bootstrap Elements</Link>
-            </li>
-            <li class={scrollJackClass}>
-              <Link to="scroll-jack-example" onClick={this.toggleSidebar.bind(this)}>Scroll Jack Example</Link>
             </li>
           </ul>
           <div id="sidebar-logo">ReBuild</div>

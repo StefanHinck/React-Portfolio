@@ -10,7 +10,6 @@ import Archives from "./pages/Archives";
 import Featured from "./pages/Featured";
 import Layout from "./pages/Layout";
 import Settings from "./pages/Settings";
-import ScrollJack from "./pages/ScrollJack";
 
 const app = document.getElementById('app');
 
@@ -21,7 +20,6 @@ ReactDOM.render(
       <Route path="bootstrap-elements" component={BootstrapElements}></Route>
       <Route path="archives" component={Archives}></Route>
       <Route path="settings" component={Settings}></Route>
-      <Route path="scroll-jack-example" component={ScrollJack}></Route>
     </Route>
   </Router>,
 app);

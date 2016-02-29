@@ -178,15 +178,36 @@ export default class Featured extends React.Component {
         <div id="featured">
           <div id="projects">
             <section id="project-0" class="slide active">
-              <h1>Lorem ipsum doler sit met nunc</h1>
+              <div class="logo-wrap">
+                <div class="logo">ReBuild</div>
+              </div>
+              <div class="copy">
+                <h1>Lorem ipsum doler sit met nunc</h1>
+                <p class="text-reg">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <a href="#" class="view-project">View Project <i class="fa fa-chevron-right"></i></a>
+              </div>
               <img src="../../style/img/feat-voodle.png" />
             </section>
             <section id="project-1" class="slide active">
-              <h1>Lorem ipsum doler sit met nunc</h1>
+              <div class="logo-wrap">
+                <div class="logo">ReBuild</div>
+              </div>
+              <div class="copy">
+                <h1>Lorem ipsum doler sit met nunc</h1>
+                <p class="text-reg">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut aliquip ex ea commodo consequat.</p>
+                <a href="#" class="view-project">View Project  <i class="fa fa-chevron-right"></i></a>
+              </div>
               <img src="../../style/img/feat-voodle.png" />
             </section>
             <section id="project-2" class="slide active">
-              <h1>Lorem ipsum doler sit met nunc</h1>
+              <div class="logo-wrap">
+                <div class="logo">ReBuild</div>
+              </div>
+              <div class="copy">
+                <h1>Lorem ipsum doler sit met nunc</h1>
+                <p class="text-reg">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <a href="#" class="view-project">View Project  <i class="fa fa-chevron-right"></i></a>
+              </div>
               <img src="../../style/img/feat-voodle.png" />
             </section>
           </div>

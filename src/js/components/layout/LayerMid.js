@@ -50,7 +50,7 @@ export default class LayerMid extends React.Component {
           <div id="sidebar-logo">ReBuild</div>
         </div>
 
-        <div id="main" style={{height: windowHeight + 'px'}}>
+        <div id="main" style={{width: windowWidth + 'px', height: windowHeight + 'px'}}>
           {this.props.children}
         </div>
       </div>

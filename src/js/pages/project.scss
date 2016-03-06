@@ -1,8 +1,42 @@
 
-.project {
+#project {
   background-color: red;
+  min-height: 100%;
+
+  .featured {
+    padding: 150px 0;
+
+    h1 {
+      text-align: center;
+      color: #000;
+      opacity: 0.1;
+      transition: opacity 800ms;
+    }
+  }
+  #intro-section {
+    background: rgba(255,255,255,0.9);
+    position: relative;
+  }
+  .page-wrap {
+    background: #fff;
+    color: #333;
+    padding: 50px;
+    position: relative;
+    top: -50px;
+    transform: translateY(0%);
+    -webkit-transition: transform 800ms;
+  }
 }
 
-.transform-x {
 
+#project.animate {
+  .featured {
+
+    h1 {
+      opacity: 0.01;
+    }
+  }
+  .page-wrap {
+    transform: translateY(30%);
+  }
 }

@@ -1,5 +1,7 @@
 import React from "react";
+import ReactTransitionGroup from 'react-addons-transition-group';
 import { IndexLink, Link } from "react-router";
+
 
 export default class LayerMid extends React.Component {
   constructor() {
@@ -51,7 +53,6 @@ export default class LayerMid extends React.Component {
         <div id="main" style={{height: windowHeight + 'px'}}>
           {this.props.children}
         </div>
-
       </div>
     );
   }

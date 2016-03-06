@@ -180,6 +180,8 @@ a:hover, a:active { text-decoration: none; }
 }
 
 #layer-all #sidebar{
+  position: fixed;
+  overflow: hidden;
   background: transparent;
   overflow: hidden;
   -webkit-transform: translateX(-70%);
@@ -250,6 +252,10 @@ a:hover, a:active { text-decoration: none; }
   -o-transition: transform 1000ms cubic-bezier(0.77, 0, 0.175, 1);
 }
 
+#layer-all.show-sidebar {
+  overflow: hidden;
+}
+
 #layer-all #sidebar li {
   -webkit-transform: translateX(-30%);
   -moz-transform:    translateX(-30%);
@@ -274,8 +280,12 @@ a:hover, a:active { text-decoration: none; }
   background: rgba(0,0,0,0.3);
   transform: translateX(0%);
   z-index: 2;
-  transition: transform 800ms cubic-bezier(0.77, 0, 0.175, 1);
-  -webkit-transition: transform 800ms cubic-bezier(0.77, 0, 0.175, 1);
+  transition:
+  transform 800ms cubic-bezier(0.77, 0, 0.175, 1),
+  background-color 800ms;
+  -webkit-transition:
+  transform 800ms cubic-bezier(0.77, 0, 0.175, 1),
+  background-color 800ms;
   -moz-transition: transform 800ms cubic-bezier(0.77, 0, 0.175, 1);
   -o-transition: transform 800ms cubic-bezier(0.77, 0, 0.175, 1);
 }
@@ -311,14 +321,4 @@ a:hover, a:active { text-decoration: none; }
   -webkit-transition: opacity .5s ease-in;
   -moz-transition: opacity .5s ease-in;
   -o-transition: opacity .5s ease-in;
-}
-.fade-leave {
-  opacity: 1;
-}
-.fade-leave.fade-leave-active {
-  opacity: 0.01;
-  transition: opacity 300ms ease-in;
-  -webkit-transition: opacity 300ms ease-in;
-  -moz-transition: opacity 300ms ease-in;
-  -o-transition: opacity 300ms ease-in;
 }

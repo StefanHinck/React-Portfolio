@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 import classNames from "classnames";
+import { IndexLink, Link } from "react-router";
 
 import "./project.scss";
 
@@ -31,8 +32,7 @@ export default class Project extends React.Component {
     });
 
     return (
-
-      <ReactCSSTransitionGroup transitionName="fade" transitionAppear={true} transitionAppearTimeout={500} transitionEnterTimeout={500} transitionLeaveTimeout={500}>
+      <div class="wrapper">
         <div id="project" class="page">
           <section id="featured-section">
             <div class="container">
@@ -40,6 +40,7 @@ export default class Project extends React.Component {
                 <div class="col-xs-12">
                   <div class="featured">
                     <h1>BACKGROUND IMAGE</h1>
+                    <Link class="ui-element" id="back" to="/"><span>sdg</span><span></span></Link>
                   </div>
                 </div>
               </div>
@@ -61,7 +62,7 @@ export default class Project extends React.Component {
             </div>
           </section>
         </div>
-      </ReactCSSTransitionGroup>
+      </div>
     );
   }
 }

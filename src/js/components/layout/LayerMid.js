@@ -76,19 +76,7 @@ export default class LayerMid extends React.Component {
 
         <div id="main" style={{width: windowWidth + 'px', height: windowHeight + 'px'}}>
 
-
-
-
-
-
-
-
             {this.maybeCSSTrans()}
-
-
-
-
-
 
         </div>
       </div>

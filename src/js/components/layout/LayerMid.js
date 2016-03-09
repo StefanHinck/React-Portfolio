@@ -24,16 +24,17 @@ export default class LayerMid extends React.Component {
     if ( location.pathname === "/" || location.pathname === "/project" ) {
       return  <ReactCSSTransitionGroup
                 component="div"
-                transitionName="move-left"
-                transitionEnterTimeout={1200}
-                transitionLeaveTimeout={1200}
+                class="content"
+                transitionName="position"
+                transitionEnterTimeout={800}
+                transitionLeaveTimeout={800}
               >
                 {React.cloneElement(this.props.children, {
                   key: this.props.location.pathname
                 })}
               </ReactCSSTransitionGroup>;
     } else {
-      return <div>{this.props.children}</div>;
+      return <div class="content">{this.props.children}</div>;
     }
   }
 

@@ -5,7 +5,7 @@ $text-reg:   normal normal 1em "text-reg", "Helvetica-Neue", Helvetica, sans-ser
 $text-bld:   normal bold 1em "text-bld", "Helvetica-Neue", Helvetica, sans-serif;
 $text-blk:   normal 900 1em "text-blk", "Helvetica-Neue", Helvetica, sans-serif;
 
-$trans-time: 1200ms;
+$trans-time: 800ms;
 $trans-bez: cubic-bezier(0.77, 0, 0.175, 1);
 
 * {
@@ -210,14 +210,18 @@ a:hover, a:active { text-decoration: none; }
 }
 
 
+#main {
 
 
+  .content {
+    width: 100%;
+    height: 100%;
+  }
+}
 .wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
+  position: relative;
   background: #232729;
 }
 
@@ -245,11 +249,11 @@ a:hover, a:active { text-decoration: none; }
   -moz-transition: transform $trans-time $trans-bez;
   -o-transition: transform $trans-time $trans-bez;
 
-  transform: translate3d(100%,0,0);
+  transform: translateX(100%);
 }
 
 .move-left-enter.move-left-enter-active {
-  transform: translate3d(0,0,0);
+  transform: translateX(0);
 }
 
 .move-left-leave {
@@ -260,11 +264,55 @@ a:hover, a:active { text-decoration: none; }
   -moz-transition: transform $trans-time $trans-bez, opacity $trans-time $trans-bez;
   -o-transition: transform $trans-time $trans-bez, opacity $trans-time $trans-bez;
 
-  transform: translate3d(0,0,0);
+  transform: translateX(0);
   opacity: 1;
 }
 
 .move-left-leave.move-left-leave-active {
-  transform: translate3d(-15%,0,0);
+  transform: translateX(-15%);
+  opacity: 0.5;
+}
+
+
+
+
+
+
+
+
+
+
+.position-enter {
+  position: absolute;
+  z-index: 100000;
+  top: 0px;
+
+  transition: all $trans-time $trans-bez;
+  -webkit-transition: all $trans-time $trans-bez;
+  -moz-transition: all $trans-time $trans-bez;
+  -o-transition: all $trans-time $trans-bez;
+
+  left: 100%;
+}
+
+.position-enter.position-enter-active {
+  left: 0%;
+}
+
+.position-leave {
+  position: absolute;
+  top: 0px;
+
+  transition: all $trans-time $trans-bez;
+  -webkit-transition: all $trans-time $trans-bez;
+  -moz-transition: all $trans-time $trans-bez;
+  -o-transition: all $trans-time $trans-bez;
+
+  left: 0%;
+  opacity: 1;
+}
+
+.position-leave.position-leave-active {
+  left: -15%;
   opacity: 0.5;
 }

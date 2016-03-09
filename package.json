@@ -1,5 +1,5 @@
 {
-  "name": "react-tutorials",
+  "name": "react-portfolio",
   "version": "0.0.0",
   "description": "",
   "main": "webpack.config.js",
@@ -16,7 +16,6 @@
     "css-loader": "^0.12.0",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.8.5",
-    "fullpage.js": "^2.7.8",
     "history": "^1.17.0",
     "jquery": "^2.2.1",
     "node-sass": "^2.1.1",

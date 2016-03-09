@@ -25,8 +25,8 @@ export default class LayerMid extends React.Component {
       return  <ReactCSSTransitionGroup
                 component="div"
                 transitionName="move-left"
-                transitionEnterTimeout={1500}
-                transitionLeaveTimeout={1500}
+                transitionEnterTimeout={1200}
+                transitionLeaveTimeout={1200}
               >
                 {React.cloneElement(this.props.children, {
                   key: this.props.location.pathname
@@ -69,7 +69,7 @@ export default class LayerMid extends React.Component {
             {this.maybeCSSTrans()}
 
         </div>
-        
+
       </div>
     );
   }

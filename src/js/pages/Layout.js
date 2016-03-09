@@ -24,8 +24,6 @@ export default class Layout extends React.Component {
     window.removeEventListener("resize", this.handleResize.bind(this));
   }
 
-
-
   handleResize() {
     this.setState({
       windowWidth: window.innerWidth,
@@ -53,16 +51,14 @@ export default class Layout extends React.Component {
 
     var stateClasses = classNames({
       'show-sidebar': this.state.sidebarVisible,
-      'show-class': true,
-      'no-class': false
     });
 
     return (
       <div id="layer-all" class={stateClasses}>
 
-        <LayerTop location={location} sidebar={this.state.sidebarVisible} updateSidebar={this.updateSidebar.bind(this)} windowWidth={this.state.windowWidth} windowHeight={this.state.windowHeight} />
+        <LayerTop location={location} sidebar={this.state.sidebarVisible} updateSidebar={this.updateSidebar.bind(this)} closeSidebar={this.closeSidebar.bind(this)} windowWidth={this.state.windowWidth} windowHeight={this.state.windowHeight} />
 
-        <LayerMid children={children} location={location} sidebar={this.state.sidebarVisible} closeSidebar={this.closeSidebar.bind(this)} updateSidebar={this.updateSidebar.bind(this)} windowWidth={this.state.windowWidth} windowHeight={this.state.windowHeight} />
+        <LayerMid location={location} sidebar={this.state.sidebarVisible} updateSidebar={this.updateSidebar.bind(this)} closeSidebar={this.closeSidebar.bind(this)} windowWidth={this.state.windowWidth} windowHeight={this.state.windowHeight} children={children} />
 
       </div>
     );

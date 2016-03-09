@@ -16,7 +16,6 @@ export default class LayerTop extends React.Component {
   }
 
   render() {
-
     const { location } = this.props;
 
     var stateClasses = classNames({

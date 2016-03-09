@@ -18,10 +18,8 @@ export default class LayerMid extends React.Component {
     this.props.closeSidebar();
   }
 
-
   maybeCSSTrans() {
     var location = this.props.location;
-    console.log(location.pathname);
 
     if ( location.pathname === "/" || location.pathname === "/project" ) {
       return  <ReactCSSTransitionGroup
@@ -43,8 +41,8 @@ export default class LayerMid extends React.Component {
   render() {
     var windowWidth = this.props.windowWidth;
     var windowHeight = this.props.windowHeight;
-    const { location } = this.props;
 
+    const { location } = this.props;
     const featuredClass = location.pathname === "/" ? "active" : "";
     const archivesClass = location.pathname.match(/^\/archives/) ? "active" : "";
     const settingsClass = location.pathname.match(/^\/settings/) ? "active" : "";
@@ -58,18 +56,10 @@ export default class LayerMid extends React.Component {
 
         <div id="sidebar" style={{height: windowHeight + 'px'}}>
           <ul>
-            <li class={featuredClass}>
-              <IndexLink to="/" noTransition onClick={this.toggleSidebar.bind(this)}>Featured</IndexLink>
-            </li>
-            <li class={archivesClass}>
-              <Link to="/archives" noTransition onClick={this.toggleSidebar.bind(this)}>Archives</Link>
-            </li>
-            <li class={settingsClass}>
-              <Link to="/settings" noTransition onClick={this.toggleSidebar.bind(this)}>Settings</Link>
-            </li>
-            <li class={bootstrapClass}>
-              <Link to="/bootstrap-elements" noTransition onClick={this.toggleSidebar.bind(this)}>Bootstrap Elements</Link>
-            </li>
+            <li class={featuredClass}><IndexLink to="/" noTransition onClick={this.toggleSidebar.bind(this)}>Featured</IndexLink></li>
+            <li class={archivesClass}><Link to="/archives" noTransition onClick={this.toggleSidebar.bind(this)}>Archives</Link></li>
+            <li class={settingsClass}><Link to="/settings" noTransition onClick={this.toggleSidebar.bind(this)}>Settings</Link></li>
+            <li class={bootstrapClass}><Link to="/bootstrap-elements" noTransition onClick={this.toggleSidebar.bind(this)}>Bootstrap Elements</Link></li>
           </ul>
           <div id="sidebar-logo">ReBuild</div>
         </div>
@@ -79,6 +69,7 @@ export default class LayerMid extends React.Component {
             {this.maybeCSSTrans()}
 
         </div>
+        
       </div>
     );
   }

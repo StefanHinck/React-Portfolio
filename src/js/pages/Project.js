@@ -12,7 +12,6 @@ export default class Project extends React.Component {
   }
 
   componentDidMount() {
-    console.log('componentDidMount');
     var $ = require('jquery');
     $(".page").addClass("animate").delay(200).queue(function(){
       $(this).removeClass("animate");
@@ -21,7 +20,7 @@ export default class Project extends React.Component {
   }
 
   componentWillUnmount() {
-    console.log('componentWillUnmount');
+
   }
 
 

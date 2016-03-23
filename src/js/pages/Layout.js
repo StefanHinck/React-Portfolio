@@ -5,6 +5,7 @@ import classNames from "classnames";
 
 import LayerTop from "../components/layout/LayerTop";
 import LayerMid from "../components/layout/LayerMid";
+import LayerNav from "../components/layout/LayerNav";
 
 export default class Layout extends React.Component {
 
@@ -59,6 +60,8 @@ export default class Layout extends React.Component {
         <LayerTop location={location} sidebar={this.state.sidebarVisible} updateSidebar={this.updateSidebar.bind(this)} closeSidebar={this.closeSidebar.bind(this)} windowWidth={this.state.windowWidth} windowHeight={this.state.windowHeight} />
 
         <LayerMid location={location} sidebar={this.state.sidebarVisible} updateSidebar={this.updateSidebar.bind(this)} closeSidebar={this.closeSidebar.bind(this)} windowWidth={this.state.windowWidth} windowHeight={this.state.windowHeight} children={children} />
+
+        <LayerNav location={location} sidebar={this.state.sidebarVisible} updateSidebar={this.updateSidebar.bind(this)} closeSidebar={this.closeSidebar.bind(this)} windowWidth={this.state.windowWidth} windowHeight={this.state.windowHeight} />
 
       </div>
     );

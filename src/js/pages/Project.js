@@ -31,7 +31,7 @@ export default class Project extends React.Component {
     });
 
     return (
-      <div class="wrapper">
+      <div class="wrapper scroll">
         <div id="project" class="page">
           <section id="featured-section">
             <div class="container">

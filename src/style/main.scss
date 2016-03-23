@@ -65,7 +65,7 @@ a:hover, a:active { text-decoration: none; }
   position: relative;
 }
 
-#main, #sidebar {
+#layer-mid, #sidebar {
   position: absolute;
   top: 0;
   left: 0;
@@ -83,7 +83,7 @@ a:hover, a:active { text-decoration: none; }
 }
 
 
-#sidebar, #main {
+#sidebar, #layer-mid {
   transition: transform $trans-time $trans-bez;
   -webkit-transition: transform $trans-time $trans-bez;
   -moz-transition: transform $trans-time $trans-bez;
@@ -195,13 +195,12 @@ a:hover, a:active { text-decoration: none; }
 
 
 
-#layer-all #main {
-  background: rgba(0,0,0,0.3);
+#layer-all #layer-mid {
   transform: translateX(0%);
   z-index: 2;
 }
 
-#layer-all.show-sidebar #main {
+#layer-all.show-sidebar #layer-mid {
   -webkit-transform: translateX(100%);
   -moz-transform:    translateX(100%);
   -ms-transform:     translateX(100%);
@@ -210,9 +209,7 @@ a:hover, a:active { text-decoration: none; }
 }
 
 
-#main {
-
-
+#layer-mid {
   .content {
     width: 100%;
     height: 100%;
@@ -223,9 +220,11 @@ a:hover, a:active { text-decoration: none; }
   height: 100%;
   position: relative;
   background: #232729;
+  overflow: hidden;
 }
-
-
+.scroll {
+  overflow: scroll;
+}
 
 
 
